@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(rgba(51, 51, 204, 0.6), rgba(51, 51, 204, 0.6)), url(https://today.ucsd.edu/news_uploads/cse-190-1500.jpg);
+  background-position: 10% 10%;
+  background-attachment: fixed;
+  background-size: auto;
+}
+
+header {
+  text-align: center;
+  margin: 1.5rem;
+  text-shadow: 3px 3px 8px rgba(17, 17, 68, 0.7);
+}
+
+header h1,
+header p {
+  font-weight: lighter;
+  margin: 0.4rem;
+}
+
+header p {
+  font-size: 0.8em;
+}
+
+.form-wrapper {
+  background-color: rgba(17, 17, 68, 0.9);
+  width: 40rem;
+  height: auto;
+  padding: 2rem;
+  margin: 0 auto;
+  border-radius: 5px 5px 0 0;
+  /* box-shadow: 0 0 8px rgba(17, 17, 68, 0.7); */
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  height: 2.5rem;
+  margin: 0.4rem 0 1rem;
+}
+
+#recommend,
+#checkbox {
+  margin: 0.4rem 0 1rem;
+}
+
+input,
+select,
+textarea {
+  /* padding-top: 0.5rem; */
+  padding-left: 0.5rem;
+  font-family: sans-serif;
+  color: rgb(17, 17, 68);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(17, 17, 68);
+}
+
+textarea {
+  padding-top: 0.5rem;
+  height: 8rem;
+}
+
+#recommend input,
+#checkbox input {
+  width: auto;
+  height: auto;
+  margin: 0 0.4rem;
+}
+
+#recommend label,
+#checkbox label {
+  font-size: 1rem;
+}
+
+.divider {
+  width: 100%;
+  height: 0.4rem;
+}
+
+#submit {
+  font-size: 1.1rem;
+  background-color: rgb(153, 153, 204);
+  border: 0;
+  border-radius: 2px;
+  transition: 0.1s;
+}
+
+#submit:hover {
+  background-color: rgb(133, 133, 184);
+}
+
+#submit:active {
+  background-color: rgb(113, 113, 164);
+}
+
+footer {
+  font-size: 0.8rem;
+  color: rgb(153, 153, 204);
+}
+
+/*
+
+// Little easter egg I showed my girlfriend :) //
+
+.christina {
+  color: rgba(150, 150, 190, 0);
+  position: absolute;
+  left: 70px;
+  transition: 0.7s;
+}
+
+.christina:hover {
+  color: rgba(150, 150, 190, 90);
+}
+
+*/
+
+@media (max-width: 700px) {
+  .form-wrapper {
+    width: 28rem;
+  }
+}
+
+/* CSS for jameSHIFT4 to jame$ transition */
+
+.dollar {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.shift4,
+.dollar {
+  transition: opacity 0.75s ease;
+}
+
+.dollar,
+.jame:hover .shift4 {
+  opacity: 0;
+}
+
+.shift4,
+.jame:hover .dollar {
+  opacity: 1;
+}
+
+/* for fun :) */
+.jame:active .dollar,
+.title-jame:active .title-dollar {
+  color: gold;
+}
+
+/* 
+HTML Code:
+<span class="jame">jame<span class="dollar">$</span><span class="shift4">SHIFT4</span></span>
+*/

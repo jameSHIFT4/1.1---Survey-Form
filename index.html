@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jame$ Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--
+
+    // Little easter egg I showed my girlfriend :) // 
+
+    <div class="christina">
+      <p>I love Christina :&rpar;</p>
+    </div>
+    
+    -->
+    <header>
+      <h1 id="title">
+        <span class="title-jame">jame<span class="title-dollar">$</span></span> Survey Form
+      </h1>
+      <p id="description">A short survey to help me improve this page :&rpar;</p>
+    </header>
+
+    <div class="form-wrapper">
+      <main>
+        <form id="survey-form" method="post">
+          <div class="name">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter name here" required />
+          </div>
+
+          <div class="email">
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter email here" required />
+          </div>
+
+          <div class="number">
+            <label id="number-label" for="number">Age:</label>
+            <input type="number" name="number" id="number" min="13" max="111" placeholder="Enter age here" />
+          </div>
+
+          <div class="dropdown">
+            <label id="dropdown-label" for="dropdown">What's do you think of this webpage?</label>
+            <select name="dropdown" id="dropdown">
+              <option value="">&lpar;select an option&rpar;</option>
+              <option value="dropdown-1">It's awesome 😎</option>
+              <option value="dropdown-2">It's aight 🤨</option>
+              <option value="dropdown-3">Meh... 🥱</option>
+              <option value="dropdown-4">It's awful! 🤢</option>
+            </select>
+          </div>
+
+          <div class="recommend">
+            <label id="recommend-label">Would you recommend this webpage to family/friends?</label>
+            <div id="recommend">
+              <input type="radio" name="recommend-answer" id="recommend-1" value="recommend-1" checked />
+              <label for="recommend-1"> Yes! Of course!</label><br />
+              <div class="divider"></div>
+              <input type="radio" name="recommend-answer" id="recommend-2" value="recommend-2" />
+              <label for="recommend-2"> Nah... I'm good.</label><br />
+              <div class="divider"></div>
+              <input type="radio" name="recommend-answer" id="recommend-3" value="recommend-3" />
+              <label for="recommend-3"> Where am I?</label>
+            </div>
+          </div>
+
+          <div class="checkbox">
+            <label id="checkbox-label">What could be better?</label>
+            <div id="checkbox">
+              <input type="checkbox" name="checkbox-1" id="checkbox-1" value="checkbox-1" />
+              <label for="checkbox-1">Poorly coded</label><br />
+              <div class="divider"></div>
+              <input type="checkbox" name="checkbox-2" id="checkbox-2" value="checkbox-2" />
+              <label for="checkbox-2">Lowkey boring...</label><br />
+              <div class="divider"></div>
+              <input type="checkbox" name="checkbox-3" id="checkbox-3" value="checkbox-3" />
+              <label for="checkbox-3">More moving parts!</label><br />
+              <div class="divider"></div>
+              <input type="checkbox" name="checkbox-4" id="checkbox-4" value="checkbox-4" />
+              <label for="checkbox-4">No entertainment</label><br />
+              <div class="divider"></div>
+              <input type="checkbox" name="checkbox-5" id="checkbox-5" value="checkbox-5" />
+              <label for="checkbox-5">Colors are bland</label><br />
+              <div class="divider"></div>
+              <input type="checkbox" name="checkbox-6" id="checkbox-6" value="checkbox-6" />
+              <label for="checkbox-6">User interface is tacky</label>
+            </div>
+          </div>
+
+          <div class="comments">
+            <label id="comments-label" for="comments">Any comments on the webpage?</label>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter comment(s) here..."></textarea>
+          </div>
+
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+      </main>
+
+      <footer>
+        <p>
+          &copy; <span class="jame">jame<span class="dollar">$</span><span class="shift4">SHIFT4</span></span>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
