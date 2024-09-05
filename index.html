@@ -17,58 +17,57 @@
       <form id="survey-form" method="post" action="https://httpbin.org/post">
         <fieldset>
           <label for="name" id="name-label">Name</label>
-          <input type="text" id="name" placeholder="Enter name here..." required />
+          <input type="text" id="name" name="name" placeholder="Enter name here..." required />
           <div class="input-div"></div>
 
           <label for="email" id="email-label">Email</label>
-          <input type="email" id="email" placeholder="Enter email here..." required />
+          <input type="email" id="email" name="email" placeholder="Enter email here..." required />
           <div class="input-div"></div>
 
           <label for="number" id="number-label">Age</label>
-          <input type="number" id="number" min="13" max="120" placeholder="Enter age here..." required />
+          <input type="number" id="number" name="age" min="13" max="120" placeholder="Enter age here..." required />
           <div class="input-div"></div>
 
           <label for="dropdown">How did you find this site?</label>
-          <select name="dropdown" id="dropdown">
+          <select name="how-found" id="dropdown">
             <option value="">Select an option...</option>
-            <option value="1">Google</option>
-            <option value="2">GitHub</option>
-            <option value="3">Discord</option>
-            <option value="4">Other</option>
+            <option value="1-Google">Google</option>
+            <option value="2-GitHub">GitHub</option>
+            <option value="3-Discord">Discord</option>
+            <option value="4-Other">Other</option>
           </select>
           <div class="input-div"></div>
         </fieldset>
 
         <fieldset>
           <legend>Would you recommend this site to others?</legend>
-          <input type="radio" id="radio-1" name="radio" value="yes" checked />
+          <input type="radio" id="radio-1" name="recommend" value="yes" checked />
           <label for="radio-1">Yes</label><br />
 
-          <input type="radio" id="radio-2" name="radio" value="yes-2" />
+          <input type="radio" id="radio-2" name="recommend" value="yes-red" />
           <label class="red" for="radio-2">Yes, but red</label><br />
           <div class="input-div"></div>
         </fieldset>
 
         <fieldset>
           <legend>What would you improve about this site?</legend>
-          <input type="checkbox" name="checkbox" id="checkbox-1" value="checkbox-1" />
-
+          <input type="checkbox" name="improve" id="checkbox-1" value="checkbox-1" />
           <label for="checkbox-1">Nothing! 😡</label><br />
-          <input type="checkbox" name="checkbox" id="checkbox-2" value="checkbox-2" />
 
+          <input type="checkbox" name="improve" id="checkbox-2" value="checkbox-2" />
           <label for="checkbox-2">Not a darn thing 🤠</label><br />
-          <input type="checkbox" name="checkbox" id="checkbox-3" value="checkbox-3" />
 
+          <input type="checkbox" name="improve" id="checkbox-3" value="checkbox-3" />
           <label for="checkbox-3">Hmm... I think... NOTHING! 🤔</label><br />
-          <input type="checkbox" name="checkbox" id="checkbox-4" value="checkbox-4" />
 
+          <input type="checkbox" name="improve" id="checkbox-4" value="checkbox-4" />
           <label for="checkbox-4">Idk maybe th-SIKE!!! NOTHING!!! 😂</label>
           <div class="input-div"></div>
         </fieldset>
 
         <fieldset>
           <label for="textarea">What else would you improve about this site?</label>
-          <textarea name="textarea" id="textarea" placeholder="Enter answer here..." rows="3" cols="30"></textarea>
+          <textarea name="textarea-improvements" id="textarea" placeholder="Enter answer here..." rows="3" cols="30"></textarea>
         </fieldset>
 
         <fieldset>
