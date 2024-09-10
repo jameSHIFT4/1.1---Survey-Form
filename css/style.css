@@ -50,7 +50,7 @@ main {
   height: 100%;
   margin: 0 auto;
   min-width: 650px;
-  padding: 3.5rem;
+  padding: 3.5rem 3.5rem 3.5rem;
   width: 70%;
 }
 
@@ -115,6 +115,11 @@ fieldset {
 #submit:active {
   background-color: #cdedf6;
   color: rgb(4, 42, 43);
+}
+
+.footer {
+  font-size: 1.25rem;
+  margin: 2.5rem 0 0;
 }
 
 .input-div {
